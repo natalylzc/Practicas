@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      background-color: black;
+      color: white;
+    }
+    .derecha {
+      width: 100%;
+    }
+    .fila-imagenes {
+      display: flex;
+    }
+    .imagen {
+      min-width: 800px;
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+    .display-none {
+      display: none;
+    }
+    .display-visibility {
+      visibility: hidden;
+    }
+    .display-opacity {
+      scale: 1;
+    }
+    .contenedor {
+      display: flex;
+      width: 100%;
+      padding: 20px;
+    }
+    .derecha {
+      width: 100%;
+    }
+    .miparrafo {
+      padding: 0px;
+      font-size: 18px;
+      width: 260px;
+      box-sizing: border-box;
+    }
+    .misubtitulo {
+      padding: 11px;
+      font-size: 19px;
+    }
+    .contenedor1 {
+      padding: 23px;
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+  <body>
+    <div class="derecha">
+      <h2>Paisajes</h2>
+      <div class="fila-imagenes">
+        <div class="imagen">
+          <img
+            src="./Paisaje1.jpg"
+            width="260"
+            class="display-opacity imagen"
+          />
+
+          <div class="cajaimagen">
+            <p class="">Propiedades que se usan para ocultar elementos:</p>
+            <ul class="">
+              <li>
+                display: none; Oculta completamente un elemento, haciendo que no
+                se vea ni ocupe espacio en el diseño de la página.
+              </li>
+              <li>
+                visibility: hidden; Controla si un elemento es visible o no,
+                pero si está oculto, todavía sigue ocupando su espacio.
+              </li>
+              <li>
+                opacity: Ajusta la transparencia de un elemento haciendo que
+                varíe desde completamente visible (1), hasta completamente
+                invisible (0).
+              </li>
+              <li>
+                transform: scale(0); Cambia el tamaño del elemento, y si se
+                escala a 0, efectivamente desaparece visualmente aunque aún
+                ocupa espacio.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="cajaimagen">
+          <img src="./Paisaje2.jpg" width="260" class="imagen" />
+          <p>esto no es una caja</p>
+        </div>
+        <img src="./Paisaje3.jpg" width="260" class="imagen" />
+        <img src="./Paisaje4.jpg" width="260" class="imagen" />
+        <img src="./Paisaje5.jpg" width="260" class="imagen" />
+        <img src="./Paisaje6.jpg" width="260" class="imagen" />
+        <img src="./Paisaje7.jpg" width="260" class="imagen" />
+        <img src="./Paisaje8.jpg" width="260" class="imagen" />
+        <img src="./Paisaje9.jpg" width="260" class="imagen" />
+      </div>
+    </div>
+  </body>
+</html>

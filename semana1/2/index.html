@@ -1,14 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .contenedor {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+    }
+    .contenedor1 {
+      display: flex;
+      width: 100%;
+      padding: 20px;
+    }
 
+    .contenedor2 {
+      width: 48%;
+      box-sizing: border-box;
+      padding: 20px;
+    }
+    .izquierda {
+      width: 100%;
+    }
+    .derecha {
+      width: 100%;
+    }
+    .mititulo {
+      padding: 16px;
+      font-size: 30px;
+      color: #7a0b0bdb;
+      background: #33a889e7;
+    }
+    .miparrafo {
+      padding: 12px;
+      font-size: 20px;
+      color: #01254b;
+      background: #2c9094;
+    }
+    .misubtitulo {
+      padding: 12px;
+      font-size: 20px;
+      color: #f5f6f6;
+      background-color: #5f0c36;
+    }
+    .parrafo1 {
+      padding: 10px;
+      font-size: 20px;
+      color: #88aec3;
+      background: #734080;
+    }
+    .imagen {
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      object-fit: contain;
+      display: block;
+    } 
+</style>
+  <body>
+    <div class="contenedor1">
+      <div class="derecha">
+        <div class="contenedor">
+          <div class="derecha">
+            <p class="mititulo">¿Qué es CSS?</p>
+            <p class="parrafo1">
+              Es un lenguaje de programación que sirve para determinar el diseño
+              de los documentos electrónicos. Los elementos del sitio web, como
+              el diseño, el color y la tipografía, pueden adaptarse como se
+              desee. Gracias a las hojas de estilo en cascada, la estructura
+              semántica y el contenido del documento no se ven afectados. CSS
+              surgió a mediados de la década de 1990 y ahora se considera el
+              lenguaje de hojas de estilo estándar en Internet, permite
+              controlar algunas especificaciones de forma centralizada, esto
+              significa que elementos similares (como todos los hipervínculos o
+              imágenes) dentro de un mismo documento pueden ser reconocidos y
+              formateados mediante un único comando.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="izquierda">
+        <img src="./css.png" width="260" alt="" class="imagen" />
+      </div>
+    </div>
 
-    <h2>¿Qué es CSS?</h2>
-    <p>Es un lenguaje de programación que sirve para determinar el diseño de los documentos electrónicos. Los elementos del sitio web, como el diseño, el color y la tipografía, pueden adaptarse como se desee.  Gracias a las hojas de estilo en cascada, la estructura semántica y el contenido del documento no se ven afectados. CSS surgió a mediados de la década de 1990 y ahora se considera el lenguaje de hojas de estilo estándar en Internet,  permite controlar algunas especificaciones de forma centralizada, esto significa que elementos similares (como todos los hipervínculos o imágenes) dentro de un mismo documento pueden ser reconocidos y formateados mediante un único comando.</p>
-    <p>¿Qué son los Pseudo elementos?</p>
-    <p>Son como etiquetas que le pones a partes especificas a tus elementos HTMl con CSS, esas partes que no son un elemento completo por sí solas. Puedes usar :before: o :after: para añarle algo extra a un elemento como un pequeño dibujito o texto antes o despúes de su contenido normal, sin tener que complicarte con más codigo en HTML.</p>
+    <div class="contenedor1">
+      <div class="izquierda">
+        <p class="misubtitulo">¿Qué son los Pseudo Elementos?</p>
+        <p class="miparrafo">
+          Son como etiquetas que le pones a partes especificas a tus elementos
+          HTML con CSS, esas partes que no son un elemento completo por sí
+          solas. Puedes usar :before: o :after: para añadirle algo extra a un
+          elemento como un pequeño dibujito o texto ante s o despúes de su
+          contenido normal, sin tener que complicarte con más codigo en HTML.
+          Son una caracteristica especial del lenguaje CSS que te permite
+          estilizar partes de un elemento que no existe como etiquetas HTML
+          independientes.
+        </p>
+      </div>
+      <div class="derecha">
+        <p class="misubtitulo">¿Qué tipos de valores hay?</p>
+        <ul class="miparrafo">
+          <li>
+            Pex(pixel) • Em: Relativo al tamaño de fuente del elemento actual
+          </li>
+          <li>
+            Rem: Relativo al tamaño de fuente del elemento raíz • Vx(Viewport
+            Width)
+          </li>
+          <li>Vh(Viewport Height) • %(Porcentaje)</li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <br />
+  </body>
+</html>
