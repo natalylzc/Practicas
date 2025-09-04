@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    color: rgb(69, 80, 69);
+    font-size: 35px;
+    font-family: Arial, sans-serif;  
+}
+.header{
+    background-color: rgb(193, 62, 62);
+    justify-content: center;
+    grid-area: header;
+}
+.sidebar{
+    background-color: #fbcc4c;
+    grid-area: sidebar;
+    justify-content: center;
+}
+.header, .sidebar, .content, .footer {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.content{
+    background-color: rgb(100, 211, 211);
+    grid-area: content;
+}
+.footer{
+    background-color: rgb(94, 216, 94);
+    grid-row: footer-start/footer-end;
+    grid-column: sidebar-start/content-end;
+}  
+.main{
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    gap: 0.25em;
+    
+
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+    "header header"
+    "sidebar content"
+    "footer footer";
+}
+body{
+    background-image: url(./Paisaje6.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+</style>
+<body>
+    <div class="main">
+        <div class="header">header</div>
+        <div class="sidebar">sidebear</div>
+        <div class="content">content</div>
+        <div class="footer">footer</div>
+     </div>
+</body>
+</html>
