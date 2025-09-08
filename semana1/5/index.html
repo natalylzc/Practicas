@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      font-size: 25px;
+    }
+  </style>
+  <body>
+    <h2>¿Qué es JavaScript?</h2>
+    <p>
+      <strong> Es un lenguaje de programación </strong> dinámico y versátil que
+      se utiliza para crear interactividad y funcionalidades avanzadas en las
+      páginas web. Permite que los sitios web respondan a las acciones del
+      usuario, como clics, movimientos del ratón o entrada de datos, haciendo
+      que la experiencia en línea sea más atractiva y dinámica. Funciona junto a
+      HTML (que da estructura) y CSS (que da estilo) para crear experiencias web
+      completas, siendo fundamental para el desarrollo web y también usado en
+      aplicaciones móviles y otros sistemas. JavaScript es fundamental para
+      construir la web moderna e interactiva que conocemos hoy.
+    </p>
+    <h3>¿Qué es var?</h3>
+    <p>
+      Es una palabra clave en JavaScript que se usa para declarar una variable,
+      es decir, una especie de contenedor con un nombre para alamacenar datos
+      como números, texto o valores lógicos, y que puede reasignada; sin
+      embargo, su uso es menos común en código moderno comparado con let y
+      const.
+    </p>
+    <h3>¿Qué es let?</h3>
+    <p>
+      Es utilizada para declarar variables que tienen un alcance de bloque, lo
+      que significa que solo son accesibles dentro del bloque de código donde se
+      definieron (como dentro de llaves{}). A diferencia de var, las variables
+      declaradas con let no se pueden redeclarar en el mismo ámbito, ofreciendo
+      un control máes estricto sobre el código y ayudando a prevenir errores
+      comunes.
+    </p>
+    <h3>¿Qué es const?</h3>
+    <p>
+      Se usa para declarar variables que no se pueden reasignar depués de su
+      creación, manteniendo su valor fijo, similar a let en su alcance de
+      bloque, y es preferible para valores que no cambiarán.
+    </p>
+    <h3>¿Qué es una función?</h3>
+    <p>
+      Son bloques de código reutilizables que ejecutan una tarea específica
+      cuando son invocados. Puedes pasarles información (parámetros) y también
+      pueden devolver un resultado, lo que las hace esenciales para estructurar
+      y hacer más eficiente el desarrollo de aplicaciones.
+    </p>
+    <h3>¿Qué es un if?</h3>
+    <p>
+      Un if es una sentencia condicional en programación. Sirve para que tu
+      programa tome decisiones. Le dices: "Si se cumple esta condición, haz
+      esto". Si la condición no se cumple, esa parte del código no se ejecuta.
+      Es la base para crear lógica y que un programa no sea siempre igual.
+    </p>
+    <script>
+      var nombre1 = "Emelyn";
+      var nombre2 = "Nataly";
+      var nombre3 = "López";
+
+      var nombrecompleto = nombre1 + " " + nombre2 + " " + nombre3;
+      var nombre1 = "Emelyn";
+      var nombre2 = "Nataly";
+      var nombre3 = "López";
+
+      function imprimirNombre(nombre1, nombre2, nombre3) {
+        var nombreCompleto = `${nombre1} ${nombre2} ${nombre3}`;
+        console.log(nombreCompleto);
+      }
+
+      function sumarNumeros(numero1, numero2) {
+        return numero1 + numero2;
+      }
+
+      imprimirNombre(nombre1, nombre2, nombre3);
+      imprimirNombre("Hebert", "Leonel", "Dominguez");
+      console.log(sumarNumeros(10, 2));
+
+      function calcularImpuesto(sueldo, porcentaje) {
+        if (porcentaje < 5) {
+          return console.log("NO ME QUITE MENOS DEL 5%");
+        }
+
+        if (porcentaje > 10) {
+          return console.log("NO ME QUITE MÁS DEL 10%");
+        }
+
+        var impuesto = sueldo * (porcentaje / 100);
+        return console.log(`Impuesto: ${impuesto}`);
+      }
+      calcularImpuesto(1000, 4);
+    </script>
+  </body>
+</html>

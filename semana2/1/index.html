@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      font-size: 20px;
+    }
+  </style>
+  <body>
+    <h1>¿Qué son los ciclos?</h1>
+    <p>
+      Los ciclos en programación, tambien llamados bucles, son herramientas
+      fundamentales que permiten la ejecución repetida de un conjunto de
+      instrucciones. Son la base para automatizar tareas y procesar colecciones
+      de datos de manera eficiente. Ya sea que necesites realizar una acción un
+      número específico de veces (como con el ciclo for), o mientras una
+      condición particular se mantenga, o hasta que se cumpla (como los ciclos
+      white y do-white), los ciclos te ayudan a escribir código más conciso y
+      potente, evitando la repetición manual de código y haciendo tus programas
+      más dinámicos
+    </p>
+
+    <h3>¿Qué es for?</h3>
+    <p>
+      Es una estructura que repite un bloque de código un número determinado de
+      veces, siendo muy útil para automatizar tareas y procesar listas de datos
+      de forma eficiente. Su estructura permite definir fácilmente el inicio, el
+      fin y el paso de la repetición.
+    </p>
+
+    <h3>¿Qué es while?</h3>
+    <p>
+      El ciclo while repite un bloque de código mientras una condición sea
+      verdadera. A diferencia del for, no siempre sabes de antemano cuantás
+      veces se ejecutará, solo que seguirá mientras la condición se cumpla.
+    </p>
+    <h3>¿Qué es recursividad?</h3>
+    <p>
+      Es una técnica de programación en la que una función se invoca a sí misma
+      para resolver un problema, dividiéndolo en subproblemas más pequeños hasta
+      alcanzar un caso base que detiene el proceso. Cuando creamos un método
+      recursivo debemos tener en cuenta que este tiene que terminar por lo que
+      dentro del método debemos asegurarnos de que no se está llamando a si
+      mismo todo el rato, lo que quiere decir que el ciclo es finito.
+    </p>
+    <h3>Operador AND</h3>
+    <p>El Operador AND (&&) es una herramienta lógica que se usa para verificar si múltiples
+      condiciones se cumplen al mismo tiempo. Solo si todas las condiciones conectadas por el AND
+      son verdaderas, el resultado de la operación será verdadero. Si alguna de ellas es falsa, 
+    el resultado general será falso</p>
+    <h3>Operador OR</h3>
+    <p>El operador OR (||) es una herramienta lógica que requiere que al menos una de las condiciones
+      sea verdadera para que el resultado sea verdadero. Solo si todas las condiciones son falsas, 
+      el resultado será falso.
+    </p>
+    <script>
+      for (let i = 0; i <= 30; i = i + 3) {
+        console.log(i);
+         
+        if(i<10){
+          console.log("ES MENOR A 10");
+        }
+
+        if(i>20)
+        console.log("ES MAYOR A 20");
+        }
+    </script>
+  </body>
+</html>
