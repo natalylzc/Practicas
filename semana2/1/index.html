@@ -59,15 +59,22 @@
     </p>
     <script>
       for (let i = 0; i <= 30; i = i + 3) {
+        if(i> 10 && i< 20){
+          continue;
+        }
         console.log(i);
-         
-        if(i<10){
+        
+          if(i<10) {
           console.log("ES MENOR A 10");
         }
 
-        if(i>20)
+        if(i>20) {
         console.log("ES MAYOR A 20");
         }
+      }
+      for (let i = 30; i >= 0; i--) {
+          console.log(i);
+      }
     </script>
   </body>
 </html>
