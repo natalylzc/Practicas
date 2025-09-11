@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      font-size: 19px;
+    }
+    .title {
+      color: red;
+    }
+    .parrafo{
+        color: yellow;
+    }
+    .title2{
+        color: red;
+    }
+    .parrafo2{
+        color: green;
+    }
+    .title3{
+        color: red;
+    }
+    .parrafo3 {
+        color:  blue;
+    }
+    .title4{
+        color: red;
+    }
+    .parrafo4{
+        color: gray;
+    }
+  </style>
+  <body>
+    <h3 class="title"></h3>
+    <p class="parrafo">
+      
+    </p>
+    <h3 class="title2"></h3>
+    <p class="parrafo2">
+      .
+    </p>
+    <h3 class="title3" ></h3>
+    <p class="parrafo3">
+      
+    </p>
+    <h3 class="title4" ></h3>
+    <p class="parrafo4">
+      
+<p class="text"></p>
+<div class="text"></div>
+
+
+    </p>
+    <script>
+      let $ = (element) => document.querySelector(element);
+      let $$ = (element) => document.querySelectorAll(element);
+
+      $(".title").innerHTML = "¿Qué es document.querySelector ( )?";
+      $(".parrafo").innerHTML = "Es un metodo en JavaScript que se usa para seleccionar el primer elemento del documento HTML. Este método devuelve el primer elemento que coincida  con el selector proporcionado. Si no encuentra ninguno, devuelve null. Es muy útil cuando necesitas acceder o modificar un elemento específico del  HTML desde tu código JavaScript. ");
+
+      console.log($(".title2").innerHTML = "¿Qué es document.querySelectorAll ( )?");
+      console.log($(".parrafo2").innerHTML = "En JavaScript se utiliza para seleccionar todos los elementos del documento   HTML que coincidan con un selector CSS. A diferencia del querySelector ( ) que solo devuelve el primer elemento, querySelectorAll( ) devuelve una   lista (NodeList) de todos los elementos que coincidan.");
+      
+      console.log($(".title3").innerHTML = "¿Qué es un innerHTML?");
+      console.log($(".parrafo3").innerHTML = "Es una propiedad en JavaScript que permite obtener o cambiar el contenido  HTML dentro de un elemento de la página web. Con ella, puedes modificar el  texto, imágenes o cualquier etiqueta dentro de un contenedor sin recargar  la página. Es muy útil para hacer páginas web dinámicas y cambiar el  contenido de forma rápida");
+      
+      console.log($(".title4").innerHTML ="¿Qué es appendChild?");
+      console.log($(".parrafo4").innerHTML= " Es un método de JavaScript que permite añadir un nuevo elemento dentro de  otro en el DOM. Es útil para crear o insertar contenido dinámicamente en  una página web, como agregar un párrafo, una imagen o cualquier otro nodo HTML dentro de un contenedor existente. Al usarlo, el nuevo elemento se coloca al final de la lista de hijos del elemento padre, permitiendo construir la estructura de la página paso a paso.");
+
+    </script>
+  </body>
+</html>
