@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        font-size: 19px;
+    } 
+    .parrafo1{
+        color: blueviolet;
+    }
+    .titulo{
+        color: red;
+    }
+    .parrafo2{
+        color: green;
+    }
+</style>
+</head>
+<body>
+    <h1 class="titulo">¿Qué es onclick?</h1>
+    <p class="parrafo1">En HTML, es un atributo que se utiliza para ejecutar una acción cuando
+        el usuario hace clic en un elemento. Se escribe directamente dentro de 
+        la etiqueta del elemento y permite añadir interactividad de forma rápida, 
+        aunque no es la forma más recomendada para proyectos más grandes.</p>
+        <p class="parrafo2">En JavaScript, es una propiedad que permite asignar una función a
+            un elemento para que se ejecute cuando se haga clic en él. Esta forma separa
+            la estructura del contenido de la lógica del comportamiento, lo que facilita la
+            organización y mantenimiento del código en aplicaciones más complejas.</p>
+
+            <button onclick="cambiarTexto()">Haz clic aquí :D</button>
+</body>
+<script>
+    function cambiarTexto () {
+        document.querySelector(".titulo").innerHTML="Titulo";
+
+        document.querySelector(".parrafo1").innerHTML="Hola";
+
+        document.querySelector(".parrafo2").innerHTML="mundo";
+    }
+</script>
+</html>
