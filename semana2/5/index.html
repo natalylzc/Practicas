@@ -30,15 +30,18 @@
             la estructura del contenido de la lógica del comportamiento, lo que facilita la
             organización y mantenimiento del código en aplicaciones más complejas.</p>
 
-            <button onclick="cambiarTexto()">Haz clic aquí :D</button>
-</body>
+            <button onclick="cambiarAHola()">Mostrar "Hola"</button>
+
+             <button onclick="cambiarAMundo()">Mostrar "Mundo"</button>
+
 <script>
-    function cambiarTexto () {
-        document.querySelector(".titulo").innerHTML="Titulo";
+    function cambiarAHola() {
+        document.querySelector(".parrafo1").innerHTML = "Hola";
+    }
 
-        document.querySelector(".parrafo1").innerHTML="Hola";
-
-        document.querySelector(".parrafo2").innerHTML="mundo";
+    function cambiarAMundo() {
+        document.querySelector(".parrafo2").innerHTML = "Mundo";
     }
 </script>
+</body>
 </html>
