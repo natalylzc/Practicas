@@ -1,47 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-<style>
-    *{
+    <style>
+      * {
         font-size: 19px;
-    } 
-    .parrafo1{
+      }
+      .parrafo1 {
         color: blueviolet;
-    }
-    .titulo{
+      }
+      .titulo {
         color: red;
-    }
-    .parrafo2{
+      }
+      .parrafo2 {
         color: green;
-    }
-</style>
-</head>
-<body>
+      }
+    </style>
+  </head>
+  <body>
     <h1 class="titulo">¿Qué es onclick?</h1>
-    <p class="parrafo1">En HTML, es un atributo que se utiliza para ejecutar una acción cuando
-        el usuario hace clic en un elemento. Se escribe directamente dentro de 
-        la etiqueta del elemento y permite añadir interactividad de forma rápida, 
-        aunque no es la forma más recomendada para proyectos más grandes.</p>
-        <p class="parrafo2">En JavaScript, es una propiedad que permite asignar una función a
-            un elemento para que se ejecute cuando se haga clic en él. Esta forma separa
-            la estructura del contenido de la lógica del comportamiento, lo que facilita la
-            organización y mantenimiento del código en aplicaciones más complejas.</p>
+    <p class="parrafo1">
+      En HTML, es un atributo que se utiliza para ejecutar una acción cuando el
+      usuario hace clic en un elemento. Se escribe directamente dentro de la
+      etiqueta del elemento y permite añadir interactividad de forma rápida,
+      aunque no es la forma más recomendada para proyectos más grandes.
+    </p>
+    <p class="parrafo2">
+      En JavaScript, es una propiedad que permite asignar una función a un
+      elemento para que se ejecute cuando se haga clic en él. Esta forma separa
+      la estructura del contenido de la lógica del comportamiento, lo que
+      facilita la organización y mantenimiento del código en aplicaciones más
+      complejas.
+    </p>
 
-            <button onclick="cambiarAHola()">Mostrar "Hola"</button>
+    <button onclick="cambiarAHola()">Mostrar "Hola"</button>
 
-             <button onclick="cambiarAMundo()">Mostrar "Mundo"</button>
+    <button onclick="cambiarAMundo()">Mostrar "Mundo"</button>
 
-<script>
-    function cambiarAHola() {
+    <h1>¿Qué son los formularios en HTML?</h1>
+    <p>
+      Son estructuras que facilitan la iteracción entre el usuario y una página
+      web, permitiendo la entrada de datos a través de diversos controles como
+      campos de texto, casillas, botones y menús desplegables. Estos datos se
+      pueden enviar a un servidor para ser procesados o manejarse directamente en
+      el navegador. Los formularios se definen con la etiqueta (form) y son
+      fundamentales para recolectar infromación necesaria.
+    </p>
+    <h3>¿Para qué se usan?</h3>
+    <p>
+      Los formularios en HTML se usan para que los usuarios puedan enviar
+      información a una página web. Esto puede incluir registrarse, iniciar
+      sesión, enviar mensajes, hacer compras o completar encuestas. Los datos
+      recopilados a través del formulario luego se procesan para realizar alguna
+      acción o respuesta en el sitio.
+    </p>
+    <form>
+      <label for="name">Nombre:</label>
+      <input type="text" id="nombre" />
+
+      <br />
+      <label for="name">Apellido:</label>
+      <input type="text" id="apellido" />
+
+      <br />
+      <label for="name"> Edad:</label>
+      <input type="number" id="edad">
+
+      <br />
+      <input type="submit" onClick="enviar(event)" value="Enviar" />
+    </form>
+    <script>
+      function cambiarAHola() {
         document.querySelector(".parrafo1").innerHTML = "Hola";
-    }
-
-    function cambiarAMundo() {
+      }
+      function cambiarAMundo() {
         document.querySelector(".parrafo2").innerHTML = "Mundo";
-    }
-</script>
-</body>
-</html>
+      }
+
+      function enviar(event) {
+        event.preventDefault();
+
+        const nombre = document.querySelector("#nombre").value;
+        const apellido = document.querySelector("#apellido").value;
+        console.log(nombre+" "+apellido);
+        const edad = document.querySelector("#edad").value;
+
+        if (edad >= 18) {
+          console.log(edad);
+        }
+      }
+      </script>
+      </body>
+      </html>

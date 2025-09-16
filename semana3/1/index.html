@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="name"> Edad:</label>
+        <input type="number" id="edad">
+        <br />
+        <input type="submit" onClick="enviar(event)" value="Enviar" />
+    </form>
+    <script>
+        function enviar(event){
+            event.preventDefault();
+        
+            const edad = document.querySelector("#edad").value;
+        
+        if (edad >= 18) {
+          console.log(edad);
+        }
+    }
+    </script>
+</body>
+</html>
