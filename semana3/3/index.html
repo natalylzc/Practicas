@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.notas {
+    width: 400px;
+    background: brown;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    color: white;
+    font-family: "calibri";
+}
+.notas h3{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.botones{
+     width: 400px;
+    padding: 30px;
+    margin: auto;
+    color: white;
+    font-family: "calibri";
+}
+</style>
+<body>
+    <form>
+        <section class="notas">
+            <h3>Notas del Estudiante</h3>
+
+        <label for="name">Nombre Completo:</label> 
+        <input type="text" id="nombre" />
+        <br />
+        <label for="carnet">Carnet:</label>
+        <input type="text" id="carnet" />
+        <br />
+        <label for="nota1">Nota1:</label>
+        <input type="number" id="nota1" />
+        <br />
+        <label for="nota2">Nota2:</label>
+        <input type="number" id="nota2" />
+        <br />
+        <label for="nota3">Nota3:</label>
+        <input type="number" id="nota3" />
+        <br />
+        <label for="total">Total:</label>
+        <input type="text" id="total" disabled/>
+        <br />
+        <label for="promedio">Promedio:</label>
+        <input type="text" id="promedio" disabled />
+        <br />
+        <label for="notaFinal">Resultado:</label>
+        <input type="text" id="notaFinal" disabled />
+        </section>
+        <br/>
+        <section class="botones">
+        <input type="button" onclick="CalcularTotal()" value="Calcular Total" >
+        <input type="button" onclick="CalcularPromedio()" value="Calcular Promedio" >
+        <input type="button" onclick="NotasResultado()" value="Ver Resultado" >
+        </section>
+    </form>
+    <script>
+        function CalcularTotal(){
+            const nota1 = +document.querySelector("#nota1").value;
+            const nota2 = +document.querySelector("#nota2").value;
+            const nota3 = +document.querySelector("#nota3").value;
+
+            const total = nota1 + nota2 + nota3;
+            document.querySelector("#total").value = total;
+        }
+        function CalcularPromedio(){
+            const nota1 = +document.querySelector("#nota1").value;
+            const nota2 = +document.querySelector("#nota2").value;
+            const nota3 = +document.querySelector("#nota3").value;
+
+            const promedio = (nota1+nota2+nota3)/3
+            document.querySelector("#promedio").value = promedio;
+                }
+        function NotasResultado(){
+            const nota1 = +document.querySelector("#nota1").value;
+            const nota2 = +document.querySelector("#nota2").value;
+            const nota3 = +document.querySelector("#nota3").value;
+
+            const total = nota1 + nota2 + nota3;
+
+            let resultado;
+
+            if(total < 20) {
+                resultado = "Reprobado";
+            } else {
+                resultado = "Aprobado";
+            }
+        document.querySelector("#notaFinal").value=resultado;
+        }
+   function factorial(numero){
+    if(numero < 0)  {
+        console.log("Error: el número no puede ser negativo");
+        return;
+    }
+    for (let i = numero - 1; i >= 1; i--){
+        let resultado = numero * i;
+        console.log(numero + " * "+ i +" = "+ resultado);
+    }
+}
+factorial(10);
+    </script>
+</body>
+</html>
