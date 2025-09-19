@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    p {
+      position: relative;
+    }
+    .imagenFija {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    @keyframes mover {
+        
+        
+    }
+    .imagenFija2 {
+      position: fixed;
+      top: 20%;
+      right: 20px;
+      z-index: 1;
+    }
+    .contenedorAbsolute {
+      height: 500px;
+    }
+  </style>
+  <body>
+    <h4>¿Qué es ::after y ::before?</h4>
+    <p>
+      Son pseudoelementos que permiten insertar contenido visual antes o después
+      de un elemento HTML, sin necesidad de modificar el marcado original. Se
+      utilizan comúnmente para añadir detalles decorativos, iconos, efectos
+      visuales o textos auxiliares sin alterar la estructura del documento.
+      Requieren la propiedad content para funcionar.
+    </p>
+
+    <h4>Top</h4>
+    <p>
+      Es una propiedad que afecta la posición vertical de un elemento
+      posicionado. No afecta a los elementos no posicionados.
+    </p>
+
+    <h4>Bottom</h4>
+    <p>
+      Especifica la distancia a la que se mueve el borde inferior del elemento
+      con respecto a su posición normal.
+    </p>
+
+    <h4>Left</h4>
+    <p>
+      Especifica la distancia desde el borde izquierdo del elemento padre (o del
+      contenedor) hasta el borde izquierdo del propio elemento.
+    </p>
+
+    <h4>Right</h4>
+    <p>
+      Especifica la distancia desde el borde derecho del elemento padre o( del
+      contenedor) hasta el borde derecho del propio elemento.
+    </p>
+
+    <h4>Position</h4>
+    <p>
+      La propiedad se utiliza para definir cómo se ubica un elemento en la
+      página web, , usando valores como static, relative, absolute, fixed o
+      sticky.
+    </p>
+
+    <h4>¿Qué es Fixed?</h4>
+    <p>
+      Es un valor de la propiedad position que hace que el elemento se mantenga
+      en una posición fija en la ventana del navegador, sin moverse aunque se
+      haga scroll. Siempre permanece visible en el mismo lugar de la pantalla.
+      Se posiciona respecto al viewport, no al documento ni a otros elementos.
+    </p>
+
+    <h4>Absolute</h4>
+    <p>
+      Es un valor de la propiedad position que posiciona un elemento respecto al
+      contendor más cercano que tenga una posición distinta a static
+      <img src="imagen.jpg" width="200" class="imagenFija2" />
+    </p>
+
+    <h4>Relative</h4>
+    <div class="contenedorAbsolute">
+      <p>
+        Es un valor de la propiedad position que permite mover un elemento desde
+        su posición original, sin cambiar el espacio que ocupa en la página.
+      </p>
+      <h4>Transition</h4>
+      <p>
+        Se refiere a una propiedad de CSS, no a una etiqueta HTML, que permite
+        crear animaciones de cambio gradual entre dos estados de un elemento,
+        como pasar de un color de fondo a otro al hacer clic o pasar el ratón
+        por encima.
+      </p>
+      <h4>Keyframes</h4>
+      <p>
+        Son una regla que permite definir los pasos intermedios de una animación
+        CSS, controlando cómo cambian las propiedades de un elemento a lo largo
+        del tiempo.
+      </p>
+      <h4>Z-index</h4>
+      <p>
+        Cuando dos elementos se superponen, el z-index determina qué elemento
+        aparece encima del otro. El z-index El valor se puede asignar con un
+        número entero o valores globales como heredar, inicial y unset. Cuando
+        se usan enteros, el z-index asignado al índice más alto aparecerá
+        delante de otros elementos
+      </p>
+      <img src="imagen.jpg" width="200" class="imagenFija" />
+    </div>
+  </body>
+</html>

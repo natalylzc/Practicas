@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .contenedor {
+        display: flex;
+        max-width: 500px;
+        margin: 20px auto;
+    }
+    
+    .categoria {
+        color: navy;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: "lucida handwriting";
+    }
+    .productos {
+        margin-left: 40px;
+        color: green;
+        font-size: 16px;
+        font-family: "Segoe UI"; 
+
+    }
+    h2 {
+        text-align: center;
+        color: brown;
+        font-family: "Segoe UI";
+    }
+    .productos:hover{
+        background-color: yellow;
+        cursor: pointer;
+    }
+    
+</style>
+<body>
+    <p></p>
+    <h2>Lista de productos</h2>
+
+      <div class="contenedor">
+        <p class="categoria">Cereal</p>
+        <div class="productos:hover">
+        <p class="productos">Kellogg's</p>
+        <p class="productos">Froot Loops</p>
+        <p class="productos">Zucaritas</p>
+    </div>
+</div>
+<div class="contenedor">
+    <p class="categoria">Leche</p>
+    <div class="productos:hover">
+        <p class="productos">Almendra</p>
+        <p class="productos">Deslactosada</p>
+        <p class="productos">Entera</p>
+    </div>
+</div>
+<div class="contenedor">
+    <p class="categoria">Carnes</p>
+    <div class="productos:hover">
+        <p class="productos">Rojas</p>  
+        <p class="productos">Cerdo</p>
+        <p class="productos">Blanca</p>
+    </div>
+</div>
+<div class="contenedor">
+    <p class="categoria">Bolsas</p>
+</div>
+<div class="contenedor">
+    <p class="categoria">Chocolate</p>
+</div>
+    <script>
+    function factorial(numero){
+            let resultado= 1;
+            for (let i= 1; i <= numero; i++){
+                resultado*= i;
+            }
+            return resultado;
+        }
+        function factorial2(numero){
+            let resultado = 1;
+            for (let i = numero; i >= 1; i--){
+                resultado*= i;
+            }
+            return resultado;
+        }
+        console.log(factorial(5));
+        console.log(factorial2(5));
+        console.log(factorial(8));
+        console.log(factorial2(8));
+
+    </script>
+</body>
+</html>

@@ -104,15 +104,15 @@
         }
    function factorial(numero){
     if(numero < 0)  {
-        console.log("Error: el número no puede ser negativo");
+        console.log("EL NÚMERO NO PUEDE SER NEGATIVO");
         return;
     }
-    for (let i = numero - 1; i >= 1; i--){
+    for (let i = numero; i > 0; i--){
         let resultado = numero * i;
-        console.log(numero + " * "+ i +" = "+ resultado);
+        console.log(numero+ " * "+ i +" = "+resultado);
     }
-}
-factorial(10);
+} 
+factorial(50);
     </script>
 </body>
 </html>
