@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    @keyframes elemento {
+      0% {
+        left: 0%;
+      }
+      50% {
+        top: calc(100% - 200px);
+        left: calc(100% - 200px);
+      }
+      100% {
+        left: 0%;
+      }
+}
+    .miImagen {
+      position: fixed;
+      height: 200px;
+      width: 200px;
+      top: 0%;
+      left: 0%;
+      animation: elemento 3s ease-in-out forwards;
+    }
+</style>
+   <img src="Imagen.png" width="200" class="miImagen" />
+</body>
+</html>
+
