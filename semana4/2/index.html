@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    @keyframes elemento {
+      0% {
+       top: 0%;
+       
+      }
+      10%{
+        top: calc(100% - 200px);
+        left: calc(100% - 200px); 
+       
+      }
+      50% {
+        top: calc(50% - 100px);
+        left: calc(100% - 200px);
+      }
+      75%{
+        top: calc(50% - 100px);
+        left: calc(50% - 100px);
+      }
+      85%{
+         top: 0%;
+      }
+      
+    }
+    .miImagen {
+      position: fixed;
+      height: 200px;
+      width: 200px;
+      top: 0%;
+      left: 0%;
+      background: blue;
+
+      animation: elemento 5s ease-in-out forwards;
+    }
+    @keyframes elemento2 {
+      0%{
+        top: calc(100% - 200px);
+        left: calc(100% - 200px);
+        background-color: transparent;
+      }
+      10%{
+        top: 0%;
+        left: 0%;
+        background-color: transparent;
+      }
+      50%{
+        top: 0%;
+        left: calc(50% - 100px);
+        background-color: transparent;
+      }
+      75%{
+        top: calc(50% - 100px);
+        left: calc(50% - 100px);
+        background-color: blue;
+      }
+      85%{
+         left: calc(100% - 200px);
+         top: calc(50% - 100px);
+         background-color: transparent;
+      }
+      100%{
+        top: calc(100% - 200px);
+        left: calc(100% - 200px);
+        background-color: transparent;
+      }
+    }
+  
+.miImagen2{
+  position: fixed;
+  height: 200px;
+  width: 200px;
+  top: 0%;
+  left: 0%;
+  
+  animation: elemento2 5s ease-in-out forwards;
+}
+</style>
+   <img src="circulo.png" width="200" class="miImagen" />
+   <img src="circulo.png" width="200" class="miImagen2" />
+</body>
+</html>
