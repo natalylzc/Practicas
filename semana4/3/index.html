@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <style>
+      * {
+        font-size: 15px;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      form {
+        background-color: rgb(13, 13, 82);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        font-family: "Calibri";
+      }
+      form label {
+        display: block;
+        color: white;
+        margin-bottom: 5px;
+      }
+      form input {
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: none;
+      }
+      .boton {
+        color: rgb(13, 13, 82);
+        font-weight: bold;
+      }
+      .boton:hover {
+        cursor: pointer;
+        background-color: rgb(244, 244, 137);
+      }
+    </style>
+  </head>
+
+  <body>
+    <form id="Formulario">
+      <label for="codigoCurso">Código Curso</label>
+      <input type="number" id="codigoCurso" style="width: 320px" >
+      <br />
+
+      <label for="nombreCurso">Nombre Curso</label>
+      <input type="text" id="nombreCurso" />
+
+      <label for="seccion">Sección</label>
+      <input type="text" id="seccion" />
+      <br />
+
+      <label for="codigoDocente">Código del Docente</label>
+      <input type="number" id="codigodelDocente" />
+      <br />
+
+      <label for="nombreDocente">Nombre del Docente</label>
+      <input type="text" id="nombredelDocente" />
+      <br />
+
+      <label for="estado">Estado</label>
+      <select id="estado" name="seleccionarEstado">
+        <option>Activo</option>
+        <option>Inactivo</option>
+        <option>s / i</option>
+      </select>
+      <br />
+      <input
+        type="submit"
+        onclick="Enviar(event)"
+        value="Enviar"
+        class="boton"
+      />
+    </form>
+    <script>
+      function Enviar(event) {
+        event.preventDefault();
+
+        const codigoCurso = document.querySelector("#codigoCurso").value;
+        const nombreCurso = document.querySelector("#nombreCurso").value;
+        const seccion = document.querySelector("#seccion").value;
+        const codigoDocente = document.querySelector("#codigodelDocente").value;
+        const nombreDocente = document.querySelector("#nombredelDocente").value;
+        const estado = document.querySelector("#estado").value;
+
+
+        if(codigoCurso ==="" || Number(codigoCurso) <20){
+            return;
+        }
+        if(nombreCurso ===""){
+            return;
+        }
+        if(seccion ===""){
+            return;
+        }
+         if(codigoDocente ===""|| Number(codigoDocente) <20 ){
+            return;
+        } 
+         if(nombreDocente ===""){
+            return;
+        }
+         if(estado ===""){
+            return;
+         }
+
+        console.log(codigoCurso);
+        console.log(nombreCurso);
+        console.log(seccion);
+        console.log(codigoDocente);
+        console.log(nombreDocente);
+        console.log(estado); 
+      } 
+    
+    </script>
+  </body>
+</html>
