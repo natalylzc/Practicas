@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="listado"></div>
+
+    <script>
+      async function traerSeguidores() {
+        let request = await fetch(
+          "./Postulantes.php"
+        );
+        let response = await request.json ();
+        let miSeguidor = response.data[0];
+        //ESTO ES UN OBJETO CON PROPPIEDADES
+        console.log(miSeguidor);
+
+        let listado = document.querySelector(".listado");
+        listado.innerHTML = `<p>Nombre: ${miSeguidor.nombre}</p>
+        <p>Correo: ${miSeguidor.correo}</p>
+        <p>Telefono ${miSeguidor.telefono}</p>`
+       
+      
+      }
+        
+        //QUIERO AÑADIR UN ELEMENTO AL HTML CON JS
+          
+    
+
+    
+
+      traerSeguidores();
+    </script>
+  </body>
+</html>
